@@ -11,6 +11,12 @@ describe('baseStyles', () => {
     expect(overlay.height).to.equal('100%');
     expect(overlay.background).to.equal('rgba(0, 0, 0, 0.3)');
     expect(overlay.opacity).to.equal(0);
+
+    expect(overlay.transform).to.equal('translate3d(100%, 0, 0)');
+    expect(overlay.MozTransform).to.equal('translate3d(100%, 0, 0)');
+    expect(overlay.WebkitTransform).to.equal('translate3d(100%, 0, 0)');
+    expect(overlay.MsTransform).to.equal('translate3d(100%, 0, 0)');
+    expect(overlay.OTransform).to.equal('translate3d(100%, 0, 0)');
   });
 
   it('has correct menuWrap styles', () => {
@@ -19,6 +25,13 @@ describe('baseStyles', () => {
     expect(menuWrap.zIndex).to.equal(2);
     expect(menuWrap.width).to.equal(300);
     expect(menuWrap.height).to.equal('100%');
+
+    expect(menuWrap.transform).to.equal('translate3d(-100%, 0, 0)');
+    expect(menuWrap.MozTransform).to.equal('translate3d(-100%, 0, 0)');
+    expect(menuWrap.WebkitTransform).to.equal('translate3d(-100%, 0, 0)');
+    expect(menuWrap.MsTransform).to.equal('translate3d(-100%, 0, 0)');
+    expect(menuWrap.OTransform).to.equal('translate3d(-100%, 0, 0)');
+
   });
 
   it('has correct menu styles', () => {
